@@ -1,18 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Manrope:wght@200..800&display=swap');
+
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+:root{
+    --Blue200: hsl(193, 38%, 86%);
+    --Green300: hsl(150, 100%, 66%);
+    --Blue600: hsl(217, 19%, 38%);
+    --Blue900: hsl(217, 19%, 24%);
+    --Blue950: hsl(218, 23%, 16%);
+    --font: "Manrope", sans-serif;
+}
 body{
-    background-color: bisque;
+    background-color: var(--Blue950);
+    font-family: var(--font);
+    color: var(--Blue200);
+    width: 100%;
+    height: 100vh;
+}
+.box-container{
+    background-color: var(--Blue950);
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
 }
 .box{
-    /* height: 30%; */
-    width: 50%;
-    border: 1px solid black;
-    background-color: aqua;
+    background-color: var(--Blue900);
+    margin: 0 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+}
+.title p{
+    color: var(--Green300);
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.quote{
+    font-size: 1.75rem;
+    font-weight: 800;
+    text-align: center;
+}
+.divisor-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.divisor-img{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.btn{
+    background-color: var(--Green300);
+    border-radius: 3rem;
+    border: none;
+    cursor: pointer;
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: -40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.dice-img{
+    height: 2rem;
+    width: 2rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .box{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .quote-container{
+        margin: 0 2rem;
+    }
+    .title{
+        margin-top: 2rem;
+    }
+    .divisor-container{
+        margin: 1rem 0;
+    }
 }
