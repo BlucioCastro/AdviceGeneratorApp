@@ -72,8 +72,10 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center; 
+}
+.btn:hover{
+    box-shadow: 0 0 20px var(--Green300);
 }
 .dice-img{
     height: 2rem;
