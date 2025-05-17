@@ -4,4 +4,4 @@ Projeto desenvolvido para reforçar meus conhecimentos em consumo de APIs e cria
 
 [**Demo Link**](https://bluciocastro.github.io/AdviceGeneratorApp/)🔗
 
-![Demonstração do projeto](design/generatorAdvice - Made with Clipchamp (1).gif)
+![Demonstração do projeto](design/generatorAdvice-gif.gif)
